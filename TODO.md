@@ -1,0 +1,1 @@
+# TODO: Add Comments to Python Programs\n\n- [x] Step 1: Confirm plan with user\n- [x] Step 2: Edit GUI calculator.py with comments\n- [x] Step 3: Edit simple calculetor1.py with comments\n- [x] Step 4: Test both files\n- [x] Step 5: Complete task\n

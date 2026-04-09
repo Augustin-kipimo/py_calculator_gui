@@ -1,18 +1,29 @@
-print("SSIMPLE CALCULATOR")
-print("Select one operater from the following list:")
+"""
+Simple Console Calculator.
+Note: Limited to integers (except division result as float). No advanced error handling.
+"""
+
+print("SIMPLE CALCULATOR")
+print("Select one operator from the following list:")
 print("1. + addition")
 print("2. - subtraction")
 print("3. * multiplication")
 print("4. / division")
+
+# Get user operator choice
 operator = input("Enter your choice (1/2/3/4): ")
+
 if operator == "1":
+    # Addition
     num1 = input("Enter first number: ")
     num2 = input("Enter second number: ")
     if num1.isnumeric() and num2.isnumeric():
         result = int(num1) + int(num2)
         print(" The result is: ", result)
+    # Missing else: no error message for invalid input
 
 elif operator == "2":
+    # Subtraction
     num1 = input("Enter first number: ")
     num2 = input("Enter second number: ")
     if num1.isnumeric() and num2.isnumeric():
@@ -22,6 +33,7 @@ elif operator == "2":
         print("Invalid input. Please enter numeric values.")
 
 elif operator == "3":
+    # Multiplication
     num1 = input("Enter first number: ")
     num2 = input("Enter second number: ")
     if num1.isnumeric() and num2.isnumeric():
@@ -31,16 +43,19 @@ elif operator == "3":
         print("Invalid input. Please enter numeric values.")
 
 elif operator == "4":
+    # Division
     num1 = input("Enter first number: ")
     num2 = input("Enter second number: ")
     if num1.isnumeric() and num2.isnumeric():
         if num2 == "0":
             print("Error: Division by zero is not allowed.")
-            #num2 = input("Enter second number that is greater than is not equal to ): ")
+            #num2 = input("Enter second number that is greater than is not equal to ): ")  # Commented buggy line
         else:
             result = float(num1) / float(num2)
             print(" The result is: ", result)
     else:
         print("Invalid input. Please enter numeric values.")
+
 else:
     print("Invalid operation. please select a valid operator (1/2/3/4).")
+
